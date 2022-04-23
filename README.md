@@ -1,4 +1,4 @@
-# My NeoVim Configuration
+# My NeoVim Configuration with Lua
 
 A simple neovim-related configuration for basic file editing.
 
