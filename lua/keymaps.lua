@@ -25,14 +25,14 @@ keymap("n", "<leader>qb", ":bd<CR>", opts) -- 退出当前 buffer
 keymap("n", "<leader>w", ":w<CR>", opts)   -- 保存
 
 -- 分屏
-keymap("n", "<C-v>", "<C-w>v", opts) -- 垂直分割窗口到右侧
-keymap("n", "<C-s>", "<C-w>s", opts) -- 横向分割窗口到下侧
+keymap("n", "wv", "<C-w>v", opts) -- 垂直分割窗口到右侧
+keymap("n", "ws", "<C-w>s", opts) -- 横向分割窗口到下侧
 
 -- 光标在分屏间跳转
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "wh", "<C-w>h", opts)
+keymap("n", "wj", "<C-w>j", opts)
+keymap("n", "wk", "<C-w>k", opts)
+keymap("n", "wl", "<C-w>l", opts)
 -- 打开位于左侧的文件浏览
 keymap("n", "<leader>e", ":Lexplore 30<cr>", opts)
 
