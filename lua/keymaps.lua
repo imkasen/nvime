@@ -20,6 +20,14 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Normal --
+keymap("n", "<leader>q", ":q<CR>", opts)   -- 退出 Nvim
+keymap("n", "<leader>qb", ":bd<CR>", opts) -- 退出当前 buffer
+keymap("n", "<leader>w", ":w<CR>", opts)   -- 保存
+
+-- 分屏
+keymap("n", "<C-v>", "<C-w>v", opts) -- 垂直分割窗口到右侧
+keymap("n", "<C-s>", "<C-w>s", opts) -- 横向分割窗口到下侧
+
 -- 光标在分屏间跳转
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
@@ -37,12 +45,9 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-h>", "^", opts) -- 跳转到行首
 keymap("n", "<S-l>", "$", opts) -- 跳转到行尾
 
-keymap("n", "<leader>q", ":q<CR>", opts) -- 退出
-keymap("n", "<leader>w", ":w<CR>", opts) -- 保存
-
 -- Buffer 跳转
-keymap("n", "<leader>l", ":bnext<CR>", opts)
-keymap("n", "<leader>h", ":bprevious<CR>", opts)
+keymap("n", "<A-l>", ":bnext<CR>", opts)
+keymap("n", "<A-h>", ":bprevious<CR>", opts)
 
 -- Insert --
 -- 按 jk 返回 normal 模式
@@ -56,7 +61,7 @@ keymap("v", ">", ">gv", opts)
 -- 上下移动文本
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
--- keymap("v", "p", '"_dP', opts)
+-- keymap("v", "p", '"_dP', opts) -- 只粘贴不复制
 
 -- Visual Block --
 -- Move text up and down

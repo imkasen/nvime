@@ -3,7 +3,6 @@ local options = {
     autochdir = true,                               -- 自定切换当前目录为当前文件所在的目录
     autoread = true,                                -- 当前文件被外部程序修改时自动加载
     autowrite = true,                               -- 自动写回
-    clipboard = "unnamedplus",                      -- 与系统共用剪切板
     cmdheight = 2,                                  -- 设定命令行行数
     colorcolumn = "120",                             -- 右侧参考线
     completeopt = "menu,menuone,noselect,noinsert", -- 自动补全不自动选中
@@ -88,6 +87,7 @@ for k, v in pairs(options) do
 end        
 
 
+vim.cmd "set clipboard+=unnamedplus"                -- 与系统共用剪切板
 vim.cmd "set shortmess+=c"                          -- Dont' pass messages to |ins-completin menu|
 vim.cmd "set whichwrap+=<,>,[,],h,l"                -- 光标在行首尾时 <Left><Right> 可以跳到下一行
 vim.cmd [[syntax on]]                               -- 语法高亮
