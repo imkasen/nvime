@@ -1,5 +1,7 @@
 # templates=linux,macos,windows,visualstudiocode,sublimetext,vim,emacs,jetbrains+all,visualstudio
 
+plugin/
+
 ### Emacs ###
 # -*- mode: gitignore; -*-
 *~
