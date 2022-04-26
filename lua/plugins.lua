@@ -49,6 +49,9 @@ packer.init {
 return packer.startup(function(use)
     use "wbthomason/packer.nvim" -- packer.nvim 可以升级自己
 
+    -- Colorschemes
+    use "EdenEast/nightfox.nvim"
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then

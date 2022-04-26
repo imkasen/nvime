@@ -4,3 +4,5 @@ require("options")
 require("keymaps")
 -- 插件
 require("plugins")
+-- 主题设置
+require("colorscheme")
