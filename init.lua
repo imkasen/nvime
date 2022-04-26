@@ -1,8 +1,8 @@
 -- 基础配置
-require("options")
+require "options"
 -- 快捷键映射
-require("keymaps")
+require "keymaps"
 -- 插件
-require("plugins")
+require "plugins"
 -- 主题设置
-require("colorscheme")
+require "colorscheme"

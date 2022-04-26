@@ -1,3 +1,5 @@
+-- 主题配置
+
 local colorscheme = "nightfox"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
