@@ -7,7 +7,7 @@ local fn = vim.fn
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 local packer_bootstrap
 if fn.empty(fn.glob(install_path)) > 0 then
-    vim.notify("Installing packer.nvim......")
+    vim.notify("Installing packer.nvim...")
     packer_bootstrap = fn.system({
         "git",
         "clone",
@@ -16,7 +16,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
         "https://github.com/wbthomason/packer.nvim",
         install_path,
     })
-    vim.notify("close and reopen NeoVim......")
+    vim.notify("close and reopen NeoVim...")
     vim.cmd [[packadd packer.nvim]]
 end
 
@@ -31,7 +31,7 @@ vim.cmd [[
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
-    vim.notify("packer.nvim is not installed")
+    vim.notify("packer.nvim is not installed!")
     return
 end
 
