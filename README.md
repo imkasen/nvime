@@ -1,5 +1,9 @@
 # My NeoVim Configuration with Lua
 
+**!!!deprecated, use `nvchad` branch!!!**
+
+---
+
 A simple neovim-related configuration for basic file editing.
 
 ## 安装
